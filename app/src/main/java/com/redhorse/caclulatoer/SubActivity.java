@@ -41,7 +41,6 @@ public class SubActivity extends AppCompatActivity {
 
              goToUrl(url);
 
-             // 키보드 내리기
              InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
              imm.hideSoftInputFromWindow(v.getWindowToken(),0);
 
