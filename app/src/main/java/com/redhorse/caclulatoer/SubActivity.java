@@ -55,5 +55,15 @@ public class SubActivity extends AppCompatActivity {
     }
 
     public void refreshButton(View view) {
+        webViewSub.reload();
+    }
+
+    @Override
+    public void onBackPressed()
+    {
+        if(webViewSub.canGoBack())
+            webViewSub.goBack();
+        else
+            super.onBackPressed();
     }
 }
