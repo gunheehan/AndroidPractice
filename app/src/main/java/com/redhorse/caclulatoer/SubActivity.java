@@ -48,6 +48,7 @@ public class SubActivity extends AppCompatActivity {
          }
          return false;
         });
+        webViewSub.loadUrl("file:///android_asset/index.html");
     }
 
     private void goToUrl(String url) {
